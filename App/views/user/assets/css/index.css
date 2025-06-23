@@ -1,0 +1,214 @@
+    .body{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .navbar{
+        height: 80px;
+        width: 100%;
+        background-color: #000000;
+        line-height: 45px;
+        font-size: large;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 4;
+        
+    }
+    .logo > span{
+        color:#ffff;
+    }
+    .logo{
+        color: #C0C0C0;
+        margin-left: 65px;
+        font-size: 30px;
+    }   
+    .navbar > .navlink > button{
+        transition-duration: 0.2s;
+        font-size: 18px;
+        margin-right: 30px;
+        color: #fff;
+    }
+    .navbar > .navlink > button:hover{
+        transition-duration: 0.2s;
+        color: black;
+        background-color: #1789eb;
+        box-shadow: #1789eb 0px 0px 25px 2px;
+    }
+
+    .content{
+
+        height: 100%;
+        padding-top: 70px;
+
+    }
+
+    .content > .sidebar{
+        width: 20%;
+        border-right: 1px solid black;
+        background-color: white;
+        height: 100%;
+        position: fixed ;
+        overflow-y: scroll;
+        z-index: 2;
+        padding-bottom: 70px;
+        box-shadow: rgba(0, 0, 0, 0.15) -10px 2.4px 5.2px inset;
+    }
+
+
+    .filters{
+        padding-top: 20px;
+    }
+    .filters > h4{
+        margin-bottom: 20px;
+        font-weight: bolder;
+        font-size: 22px;
+    }
+    .filters  label:hover{
+        color: #333;
+        text-shadow: 1px 1px 2px rgba(255, 174, 100, 0.3);
+    }
+    .category-filter form > *{
+        height: 35px;
+    }
+    .category-filter form{
+        display: flex;
+        
+    }
+    .filters > .category-filter button{
+
+        padding: 0px 10px;
+        margin: 4px 10px;
+        margin-top: -2px;
+    }
+    .filters > .category-filter ,.filters >  .platform-filter{
+        align-items: center;
+        line-height: 25px;
+        padding-left: 20px;
+    }
+    .filters > .platform-filter {
+        font-size: large;
+    }
+    input[type="checkbox"] + label {
+        vertical-align: middle;
+        margin-left: 4px;
+    }
+    input[type="checkbox"] {
+        vertical-align: middle;
+        accent-color: black;
+    }
+    .filters > .platform-filter label{
+        padding-left: 13px;
+        margin-bottom: 4px;
+    }
+    .platform-filter form input{
+        margin-left: 20px;
+    }
+    .platform-filter form button{
+        width: 100px;
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+
+
+    .right-section{
+        top: 68px;
+        position: absolute;
+        left: 20%;
+        width: 80%;
+    }
+
+    .right-section > .main-content{
+        width: 100%;
+        /* height: 3000px; */
+    }
+    .right-section > .main-content > .rows{
+        padding-top: 40px;
+        padding-left: 20px;
+    }
+
+    .category-carousel {
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding: 20px 30px;
+        width: 95%;
+
+    }
+
+    .carousel-track {
+        display: flex;
+        gap: 2rem;
+        scroll-behavior: smooth;
+    }
+
+    .category-carousel .card {
+        flex: 0 0 auto;
+    }
+
+    .card {
+        flex: 0 0 auto;
+        border-radius: 15px 15px 8px 8px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        transition-duration: 0.4s;
+    }
+    .card:hover{
+        transition-duration: 0.2s;
+        transform: scale(1.1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        a{
+            transition-duration: 0.2s;
+            box-shadow: 4px 4px 0 #000;
+            transform: translate(-4px,-4px);  
+        }
+        img{
+            transform: scale(1.07);
+            transition-duration: 0.2s;
+        }
+    }
+    
+    .card img{
+        transition-duration: 0.2s;
+        height: 185px;
+        border-radius: 10px;
+    }
+    .card a:hover{
+        
+        border-color: whitesmoke;
+        transition-duration: 0.1s;
+        color: rgb(255, 255, 255);
+        background-color: #000000;
+        box-shadow: #000000 0px 0px 1px 2px;
+        transform: translate(0px,0px);  
+
+
+    }
+    .card a{
+        transition: all .14s ease-out;
+        border-radius: 6px;
+        text-decoration: none;
+        border:1px solid #d0d0d0;
+        background-color: #1c1f23;
+        color: white ;
+    }
+    .card a:active{
+        box-shadow: inset #000000 0px 0px 1px 2px;
+    }
+
+    .filtered{
+        padding: 30px 0px 0px 30px;
+    }
+    .filtered > .heading *{
+        font-weight: 600;
+        padding-bottom: 30px;
+    }
+    .filtered > .cards_area{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;  
+        padding-right: 30px;
+        width: 90%;
+        margin: 0px auto;
+        justify-content: center;
+    }
